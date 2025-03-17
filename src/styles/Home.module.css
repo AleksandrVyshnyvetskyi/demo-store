@@ -54,7 +54,7 @@
 
 .image .img {
   max-width: 400px;
-  max-height: 400px;
+  /* max-height: 400px; */
   position: absolute;
   bottom: 0;
   right: 10%;

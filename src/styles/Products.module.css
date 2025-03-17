@@ -12,9 +12,11 @@
 
 .product {
   background: var(--bg);
+  border: 2px solid var(--bg);
   border-radius: 8px;
   overflow: hidden;
   width: calc(100% / 5 - 20px);
+  transition: all 0.2s ease-in-out;
 }
 
 .product:nth-child(5n) {
@@ -27,9 +29,23 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  z-index: 1;
+}
+
+.product:hover {
+  border-color: var(--violet-dark);
+}
+
+.product:hover  .image{
+  transform: scale(1.1);
 }
 
 .wrapper {
+  background-color: var(--bg);
+  position: relative;
+  z-index: 2;
   padding: 12px;
   display: flex;
   flex-direction: column;
@@ -40,6 +56,11 @@
   font-weight: 600;
   font-size: 15px;
   line-height: 18px;
+  transition: all 0.2s ease-in-out;
+}
+
+.product:hover .title {
+  color: var(--violet-dark);
 }
 
 .cat {
@@ -70,6 +91,11 @@
   font-size: 20px;
   line-height: 24px;
   color: var(--violet-dark);
+  transition: all 0.2s ease-in-out;
+}
+
+.product:hover .price {
+  color: var(--light);
 }
 
 .oldPrice {
@@ -91,4 +117,3 @@
   margin-top: 24px;
   text-align: center;
 }
-

@@ -6,12 +6,14 @@ import Header from '../Header/Header';
 import Sidebar from '../Sidebar/Sidebar';
 import Footer from '../Footer/Footer';
 import { getCatalog } from '../../features/catalog/catalogSlice';
+import { getProducts } from '../../features/products/productsSlice';
 
 const App = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(getCatalog());
+    dispatch(getProducts());
   }, [dispatch]);
 
   return (
