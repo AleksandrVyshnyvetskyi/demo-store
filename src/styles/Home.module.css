@@ -2,6 +2,7 @@
   position: relative;
   flex-grow: 1;
   height: 500px;
+  width: 500px;
   z-index: 1;
 }
 
@@ -48,13 +49,23 @@
   position: relative;
   flex-grow: 1;
   height: 250px;
+  display: flex;
 }
 
-.image img {
+.image .img {
+  max-width: 400px;
+  max-height: 400px;
   position: absolute;
-  bottom: -15%;
+  bottom: 0;
   right: 10%;
-  max-width: unset;
+}
+
+.image .samsung {
+  /* max-width: 400px; */
+  max-height: 400px;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
 }
 
 .banner {

@@ -3,9 +3,9 @@ import React from 'react';
 import styles from '../../styles/Home.module.css';
 import BG from '../../img/computer.png';
 
-const Poster = () => {
+const Poster1 = () => {
   return (
-    <section className={styles.home}>
+    <>
       <h3 className={styles.title}>
         Знижки до 20%
       </h3>
@@ -16,11 +16,11 @@ const Poster = () => {
           <button className={styles.button}>Придбати</button>
         </div>
         <div className={styles.image}>
-          <img src={BG} alt="пропозиція тижня" />
+          <img src={BG} className={styles.img} alt="пропозиція тижня" />
         </div>
       </div>
-    </section>
+    </>
   );
 };
 
-export default Poster;
+export default Poster1;
