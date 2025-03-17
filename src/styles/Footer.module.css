@@ -1,0 +1,196 @@
+.footer {
+  margin-top: 20px;
+  padding: 24px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: auto;
+  display: flex;
+  margin-bottom: 15px;
+  justify-content: start;
+}
+
+.logo p {
+  font-size: 26px;
+}
+
+.logo span {
+  color: var(--violet);
+}
+
+.logo a {
+  height: 100%;
+}
+
+.svgBar {
+  transition: all 0.3s ease-in-out;
+}
+
+.svgBar1,
+.svgBar2,
+.svgBar3,
+.svgBar4 {
+  fill: #8b57c6;
+}
+
+.svgBar5,
+.svgBar6,
+.svgBar7,
+.svgBar8 {
+  fill: #6c3eb8;
+}
+
+.logo:hover .svgBar1,
+.logo:hover .svgBar2,
+.logo:hover .svgBar3,
+.logo:hover .svgBar4 {
+  transform: scaleX(1.1);
+  fill: #c49fed;
+}
+
+.logo:hover .svgBar5,
+.logo:hover .svgBar6,
+.logo:hover .svgBar7,
+.logo:hover .svgBar8 {
+  transform: scaleX(1.1);
+  fill: #8b57c6;
+}
+
+.rights {
+  color: var(--dark-sea);
+  font-size: 12px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rights span {
+  margin-right: 15px;
+}
+
+.rights a {
+  color: var(--violet);
+  transition: all 0.3s ease-in-out;
+}
+
+.rights a:hover {
+  color: var(--white);
+}
+
+.socials {
+  display: flex;
+  gap: 15px;
+}
+
+.title {
+  margin: 5px;
+  text-align: center;
+}
+
+.weekdays,
+.weekend {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  width: 210px;
+}
+
+.days {
+  text-align: center;
+  margin-right: 10px;
+  padding: 5px 10px;
+  border-radius: 8px;
+  background-color: var(--bg);
+  width: 100px;
+  margin-bottom: 5px;
+}
+
+.tel,
+.social {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.tel h3,
+.social h3 {
+  margin-bottom: 5px;
+}
+
+.tel a,
+.social a {
+  margin-bottom: 10px;
+  transition: all 0.3s ease-in-out;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+}
+
+.tel a:hover,
+.social a:hover {
+  color: var(--violet);
+}
+
+.description {
+  color: var(--grey);
+  font-size: 12px;
+  margin-left: 15px;
+}
+
+.about {
+  min-width: 20%;
+  font-size: 0.7rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  align-content: space-around;
+}
+
+.about p {
+  margin-bottom: 10px;
+  color: var(--grey);
+}
+
+.about li {
+  margin-bottom: 10px;
+}
+
+.about a {
+  transition: all 0.3s ease-in-out;
+}
+
+.about a:hover {
+  color: var(--violet);
+}
+
+.forBuyers {
+  margin-right: 10px;
+}
+
+.aboutConpany {
+}
+
+.instaIcon {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.telegIcon {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+}
+
+.social a:hover .instaIcon,
+.social a:hover .telegIcon {
+  fill: var(--violet);
+}
