@@ -11,12 +11,12 @@ const Footer = () => {
     <>
       <section className={styles.footer}>
         <div className={styles.schedule}>
-          <div className={styles.logo}>
+          <a href='#header' className={styles.logo}>
             <LogoFooter />
             <p>
               <span>D</span>emo<span>S</span>tore
             </p>
-          </div>
+          </a>
         </div>
         <div className={styles.info}>
           <div>

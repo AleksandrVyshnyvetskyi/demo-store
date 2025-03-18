@@ -11,17 +11,17 @@ import { useSelector } from 'react-redux';
 import Categories from '../Categories/Categories';
 
 const Home = () => {
-  // const { list } = useSelector(({ products }) => products);
-  const { list } = useSelector(({ categories }) => categories);
-  console.log(list)
+  const { categories, products } = useSelector(( state ) => state);
+  console.log(categories.list)
+  console.log(products.list)
 
   return (
     <>
       <section className={styles.home}>
         <KeenSlider item1={<Poster1/>} item2={<Poster2/>} item3={<Poster3/>} item4={<Poster4/>}/>
       </section>
-      {/* <Products products={list} amount={5} title="Популярне зараз:"/> */}
-      <Categories products={list} amount={5} title="Варто подивитись:"/>
+      <Products products={products.list} amount={5} title="Популярне зараз:"/>
+      <Categories products={categories.list} amount={5} title="Варто подивитись:"/>
     </>
   );
 };

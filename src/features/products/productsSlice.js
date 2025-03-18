@@ -19,20 +19,21 @@ const productsSlice = createSlice({
   name: 'products',
   initialState: {
     list: [],
-    // fltered: [],
-    // related: [],
     isLoading: false,
+    error: null,
   },
   extraReducers: (builder) => {
     builder.addCase(getProducts.pending, (state) => {
       state.isLoading = true;
+      state.error = null;
     });
     builder.addCase(getProducts.fulfilled, (state, { payload }) => {
       state.list = payload;
       state.isLoading = false;
     });
-    builder.addCase(getProducts.rejected, (state) => {
+    builder.addCase(getProducts.rejected, (state, { payload }) => {
       state.isLoading = false;
+      state.error = payload;
     });
   },
 });

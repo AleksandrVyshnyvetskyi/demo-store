@@ -13,7 +13,7 @@ const avatar =
 
 const Header = () => {
   return (
-    <div className={styles.header}>
+    <div id='header' className={styles.header}>
       <div className={styles.logo}>
         <Link to={ROUTES.HOME}>
           <div>
