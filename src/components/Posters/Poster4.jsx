@@ -1,7 +1,7 @@
 import React from 'react';
 
 import styles from '../../styles/Home.module.css';
-import iPhone16e from '../../img/poster-img/';
+import iPhone16e from '../../img/poster-img/Iphone_16e.webp';
 
 const Poster4 = () => {
   return (
