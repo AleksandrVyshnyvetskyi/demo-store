@@ -28,7 +28,7 @@ const Products = ({ title, style = {}, products = [], amount }) => {
                   </div>
                 </div>
                 <p className={styles.purchases}>
-                  {Math.floor(Math.random() * 20 + 3)} вже купили
+                  {Math.floor(Math.random() * 100 + 7)} вже купили
                 </p>
               </div>
             </Link>
