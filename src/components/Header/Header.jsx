@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 
 import { ROUTES } from '../../utils/routes';
 import styles from '../../styles/Header.module.css';
-import Logo from '../../img/logo.jsx';
-import SearchIcon from '../../img/SearchIcon.jsx';
-import HeartIcon from '../../img/HeartIcon.jsx';
-import BrackedIcon from '../../img/BrackedIcon.jsx';
+import Logo from '../../img/icon/logo.jsx'
+import SearchIcon from '../../img/icon/SearchIcon.jsx';
+import HeartIcon from '../../img/icon/HeartIcon.jsx';
+import BrackedIcon from '../../img/icon/BrackedIcon.jsx';
 
 const avatar =
   'https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/batman_hero_avatar_comics-512.png';

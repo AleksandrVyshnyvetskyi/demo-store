@@ -1,7 +1,7 @@
 import React from 'react';
 
 import styles from '../../styles/Home.module.css';
-import Xiaomi from '../../img/Xiaomi_A55_Pro.webp';
+import Xiaomi from '../../img/poster-img/Xiaomi_A55_Pro.webp';
 
 const Poster3 = () => {
   return (

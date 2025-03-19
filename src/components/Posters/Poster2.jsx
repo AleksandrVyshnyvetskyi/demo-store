@@ -1,7 +1,7 @@
 import React from 'react';
 
 import styles from '../../styles/Home.module.css';
-import SamsungS25Ultra from '../../img/Samsung_S25_ULTRA.webp';
+import SamsungS25Ultra from '../../img/poster-img/Samsung_S25_ULTRA.webp';
 
 const Poster2 = () => {
   return (

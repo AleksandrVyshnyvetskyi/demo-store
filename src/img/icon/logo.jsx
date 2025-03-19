@@ -1,9 +1,9 @@
-import styles from '../styles/Footer.module.css';
+import styles from '../../styles/Header.module.css';
 
-const LogoFooter = () => {
+const Logo = () => {
   return (
     <svg
-      className={styles.footerLogo}
+      className={styles.headerLogo}
       viewBox="-51.2 -51.2 614.40 614.40"
       width="25"
       height="25"
@@ -70,4 +70,4 @@ const LogoFooter = () => {
   );
 };
 
-export default LogoFooter;
+export default Logo;

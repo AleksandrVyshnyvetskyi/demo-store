@@ -2,9 +2,9 @@ import React from 'react';
 
 import { ROUTES } from '../../utils/routes';
 import styles from '../../styles/Footer.module.css';
-import LogoFooter from '../../img/logoFooter.jsx';
-import InstaIcon from '../../img/InstaIcon.jsx';
-import TelegIcon from '../../img/TelegIcon.jsx';
+import LogoFooter from '../../img/icon/logoFooter.jsx';
+import InstaIcon from '../../img/icon/InstaIcon.jsx';
+import TelegIcon from '../../img/icon/TelegIcon.jsx';
 
 const Footer = () => {
   return (

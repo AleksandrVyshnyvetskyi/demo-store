@@ -9,11 +9,10 @@ import Poster4 from '../Posters/Poster4';
 import Products from '../Products/Products';
 import { useSelector } from 'react-redux';
 import Categories from '../Categories/Categories';
+import Banner from '../Banner/Banner';
 
 const Home = () => {
   const { categories, products } = useSelector(( state ) => state);
-  console.log(categories.list)
-  console.log(products.list)
 
   return (
     <>
@@ -22,6 +21,7 @@ const Home = () => {
       </section>
       <Products products={products.list} amount={5} title="Популярне зараз:"/>
       <Categories products={categories.list} amount={5} title="Варто подивитись:"/>
+      <Banner/>
     </>
   );
 };

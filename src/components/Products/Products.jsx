@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from "react-router-dom";
 
 import styles from '../../styles/Products.module.css';
-import demoImg from '../../img/demo_img-vertical.webp';
+import demoImg from '../../img/demo-img/demo_img-vertical.webp';
 
 const Products = ({ title, style = {}, products = [], amount }) => {
   const list = products.filter((_, i) => i < amount);

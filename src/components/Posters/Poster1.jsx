@@ -1,7 +1,7 @@
 import React from 'react';
 
 import styles from '../../styles/Home.module.css';
-import BG from '../../img/computer.png';
+import BG from '../../img/poster-img/computer.png';
 
 const Poster1 = () => {
   return (
