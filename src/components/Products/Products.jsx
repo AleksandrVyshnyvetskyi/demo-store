@@ -13,7 +13,10 @@ const Products = ({ title, style = {}, products = [], amount }) => {
 
       <div className={styles.list}>
         {list.map(({ id, images, title, category: { name: cat }, price }) => {
-          const productImage = images?.[0] ? images[0] : demoImg;
+          const isValidImageUrl = (url) => {
+            return /\.(jpeg|jpg|gif|png|webp|svg)$/i.test(url);
+          };
+          const productImage = images?.[0] && isValidImageUrl(images[0]) ? images[0] : demoImg;
 
           return (
             <Link to={`/products/${id}`} key={id} className={styles.product}>
@@ -23,8 +26,8 @@ const Products = ({ title, style = {}, products = [], amount }) => {
                 <p className={styles.cat}>{cat}</p>
                 <div className={styles.info}>
                   <div className={styles.prices}>
-                    <p className={styles.price}>{price * 10 - 1} грн</p>
-                    <p className={styles.oldPrice}>{Math.floor(price * 15 - 1)} грн</p>
+                    <p className={styles.price}>{price * 20 - 1} грн</p>
+                    <p className={styles.oldPrice}>{Math.floor(price * 25 - 1)} грн</p>
                   </div>
                 </div>
                 <p className={styles.purchases}>

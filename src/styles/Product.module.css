@@ -24,6 +24,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 6px;
+  transition: all 0.2s ease;
 }
 
 .images-list {
@@ -104,12 +105,17 @@
 .actions {
   margin-top: 20px;
   display: flex;
-  column-gap: 10px;
+  column-gap: 10px; 
+}
+
+.add {
+  font-size: 14px;
 }
 
 .favourite {
   background: var(--dark-sea);
   border-radius: 6px;
+  font-size: 14px;
 }
 
 .favourite:hover {
